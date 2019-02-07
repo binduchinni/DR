@@ -1,0 +1,84 @@
+package CableBilling;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class CBL {
+  @Test
+  public void f() throws Exception{
+	  System.setProperty("webdriver.chrome.driver","D:\\New Selenium Docs\\chromedriver_win32\\chromedriver.exe");
+	  WebDriver driver=new ChromeDriver();
+	  driver.get("http://cablebilling.digitalrupay.com");
+	  Thread.sleep(1000);
+	  driver.findElement(By.linkText("LOGIN")).click();
+	  driver.findElement(By.id("loginEmail")).sendKeys("ak@ak.com");
+	  driver.findElement(By.id("loginPwd")).sendKeys("123456");
+	  driver.findElement(By.id("loginSubmit")).click();
+	  Thread.sleep(1000);
+	  driver.manage().window().maximize();
+	  Actions a1=new Actions(driver);
+	 WebElement e1=driver.findElement(By.xpath("/html/body/div/div[1]/section[2]/div/div[1]/div/div[2]/a"));
+	 Thread.sleep(2000);
+	  a1.click(e1).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  //Actions a2=new Actions(driver);
+	WebElement e2=driver.findElement(By.xpath("/html/body/div/div[1]/section[2]/div/div[2]/div/div[1]/a"));
+	Thread.sleep(2000);
+	  a1.click(e2).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  //Actions a3=new Actions(driver);
+	 WebElement e3=driver.findElement(By.xpath("/html/body/div/div[1]/section[2]/div/div[3]/div/div[2]/a"));
+	 Thread.sleep(2000);
+	  a1.click(e3).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  //Actions a4=new Actions(driver);
+	 WebElement e4=driver.findElement(By.xpath("/html/body/div/div[1]/section[2]/div/div[4]/div/div[2]/a"));
+	 Thread.sleep(2000);
+	  a1.click(e4).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  //Actions a5=new Actions(driver);
+	  WebElement e5=driver.findElement(By.xpath("/html/body/div[1]/div[1]/section[2]/div/div[5]/div/div[2]/div[1]/h3"));
+	  Thread.sleep(2000);
+	  a1.click(e5).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  //Actions a6=new Actions(driver);
+	  WebElement e6=driver.findElement(By.xpath("/html/body/div[1]/div[1]/section[2]/div/div[6]/div/div[2]/div[1]/h3"));
+	  Thread.sleep(2000);
+	  a1.click(e6).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  //Actions a7=new Actions(driver);
+	  WebElement e7=driver.findElement(By.xpath("/html/body/div[1]/div[1]/section[2]/div/div[7]/div/div[2]/div[2]/i"));
+	  Thread.sleep(2000);
+	  a1.click(e7).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  //Actions a8=new Actions(driver);
+	  WebElement e8=driver.findElement(By.xpath("/html/body/div[1]/div[1]/section[2]/div/div[8]/div/div[2]"));
+	  Thread.sleep(2000);
+	  a1.click(e8).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  //Actions a9=new Actions(driver);
+	  WebElement e9=driver.findElement(By.xpath("/html/body/div[1]/div[1]/section[2]/div/div[9]/div/div[2]/div[1]/p"));
+	  Thread.sleep(2000);
+	  a1.click(e9).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  //Actions a10=new Actions(driver);
+	  WebElement e10=driver.findElement(By.xpath("/html/body/div[1]/div[1]/section[2]/div/div[10]/div/div[2]/div[2]/i"));
+	  Thread.sleep(2000);
+	  a1.click(e10).build().perform();
+	  Thread.sleep(1500);
+	  driver.navigate().back();
+	  
+ }
+}
