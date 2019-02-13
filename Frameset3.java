@@ -7,7 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Frameset3 {
   @Test
   public void f() throws Exception{
-	  System.setProperty("webdriver.gecko.driver","D:\\New Selenium Docs\\geckodriver\\geckodriver.exe");
+	  System.setProperty("webdriver.gecko.driver","D:\\New 
+Selenium Docs\\geckodriver\\geckodriver.exe");Selenium Docs\\geckodriver\\geckodriver.exe");
 	  WebDriver driver=new FirefoxDriver();
 	  driver.get("https://only-testng-blog.blogspot.in");
 	  driver.manage().window().maximize();
